@@ -21,7 +21,8 @@ async function main() {
 
 	for (let entry of addresses) {
 		let balance = await Promise.resolve(tokenContract.balanceOf(entry));
-		console.log(entry, ethers.utils.formatUnits(balance, decimalNumber));
+		let formattedBalance = ethers.utils.commify(ethers.utils.formatUnits(balance, decimalNumber));
+		console.log(entry, formattedBalance);
 	}
 };
 
