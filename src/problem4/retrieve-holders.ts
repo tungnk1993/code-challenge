@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 
-const provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org/");
+const provider = new ethers.providers.JsonRpcProvider("https://goerli.infura.io/v3/9f7ffb65ea4343e9843a01c21ae71be0");
 
 const tokenAddress = "0xc0ecb8499d8da2771abcbf4091db7f65158f1468";
 const tokenAbi = [  
